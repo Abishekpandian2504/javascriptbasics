@@ -172,26 +172,138 @@
 
 //15th comparison operator 
 
-// console.log( 5 > 3)
-
-let x = 5;
-
-//relation operator
-console.log( x > 8);
-console.log( x <= 5);
-
-//equality operator
-console.log ( x == 5);
-console.log ( x != 5)
-
-//string comparison
-console.log( "abishek" < "aravinth")
-
-//comparison of diff type
-console.log ('5' < 4)  //smart JS consider 5 < 4
-console.log(true == 1 )  // true=1 , false=0
+// // console.log( 5 > 3)
+// let x = 5;
+// //relation operator
+// console.log( x > 8);
+// console.log( x <= 5);
+// //equality operator
+// console.log ( x == 5);
+// console.log ( x != 5)
+// //string comparison
+// console.log( "abishek" < "aravinth")
+// //comparison of diff type
+// console.log ('5' < 4)  //smart JS consider 5 < 4
+// console.log(true == 1 )  // true=1 , false=0
 
 
- 
+//16th diff of equality operator
+
+// //strict equality operator
+// console.log( 1 === 1); // num === num
+// console.log( '1' === 1); // str === num
+
+// //lose equality operator
+// console.log(1 == 1);
+// console.log('1' == 1); // ==( '1' == '1') system consider first one string means 2nd also string
 
 
+//17th ternary operator (hint : condition )
+
+// let age = 27;
+
+// // if (age > 18) {
+// //     let type = 'adult';
+// //     console.log(type);
+// // }
+// // else {
+// //     let type = 'child';
+// //     console.log(type);
+// // }
+
+// let type = age > 18 ?  'adult' : 'child' 
+// console.log(type)
+
+
+//18th logical operator
+// // logical AND (&&)
+// // return both operands are true
+// console.log( 2<5 && 6<5 );
+// console.log( true && true );
+
+// // logical OR (||)
+// //return true if any operand are true
+// console.log( 2<5 || 6<5)
+// console.log( true || false)
+
+// // NOT (!) opposite of input
+// console.log(!false)
+
+//19th roughly think
+// let income= 26000;
+// let cibil= 650;
+
+// if(income > 25000 && cibil > 600){
+//     let Passed = " loan Eligible"
+//     console.log(Passed)
+// }
+// else {
+//     let notPassed = " loan not Eligible"
+//     console.log(notPassed)
+// }
+
+//20th
+// let income = true;
+// let cibil = false;
+
+// let loanStatus = income && cibil;
+
+// console.log("status" + ": " + loanStatus)
+
+//21th
+// let income = 24000;
+// let cibil =750;
+
+// let loanStatus = income > 25000 && cibil > 700 ? "isApproved" : "isnotApproved"; 
+// console.log(loanStatus)
+
+//22nd 
+//falsy(false not exact false ) or truthy
+
+//logic perform
+// let newName = "Abishek";
+// let defaultName = "iphone";
+
+// let setName = newName || defaultName;
+// console.log(setName)
+
+// 23rd conditions
+// just imagine morn , afn, even one msg
+// let hour = 24;
+
+// if (hour< 12) {
+//     console.log("Good morn");
+// }
+// else if (hour > 12 && hour < 16) {
+//     console.log(" Good afn");
+// }
+// else if (hour > 16 && hour < 20){
+//     console.log("good even")
+// }
+// else {
+//     console.log("good night")
+// }
+
+//23(a) get system current date time use *new Date()*
+// // let hrs = new Date();
+// // let hour = hrs.getHours();
+
+// // // console.log(hour);
+// // // console.log(hour.getHours());
+
+// let hour = new Date().getHours();
+
+// if (hour< 12) {
+//     console.log("Good morn");
+// }
+// else if (hour > 12 && hour < 16) {
+//     console.log(" Good afn");
+// }
+// else if (hour > 16 && hour < 20){
+//     console.log("good even")
+// }
+// else {
+//     console.log("good night")
+// }
+
+//24th
