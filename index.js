@@ -306,4 +306,123 @@
 //     console.log("good night")
 // }
 
-//24th
+//24th switch used to fnd like matching or not 
+// // like to fingd grades in subject
+// let x = 3
+// switch(x)
+// {
+//     case 3 :
+//     console.log("is true");
+//     break; 
+//     case 4 :
+//     console.log("is not true");
+//     break; 
+//     default : 
+//     console.log("wait")
+//     break;
+// }
+
+
+//24(b) 
+// let x = 30;
+// switch(true)
+// {
+//     case x < 9 :
+//     console.log("is one digit num");
+//     break; 
+//     case x < 99 :
+//     console.log("is 2 digit num");
+//     break; 
+//     default : 
+//     console.log("3 dig or bigger")
+//     break;
+// }
+
+//25 assignment 
+// let x= 999;
+
+// if(x>10000 && x<60000){
+//     console.log("buy android");
+// }
+// else if(x>=60000){
+//     console.log("buy iphone");
+// }
+// else if(x<10000 && x>5000) {
+//     console.log("buy basic phone");
+// }
+// else {
+//     console.log("not affordable")
+// }
+
+//26th
+// let x= 4999;
+
+// switch (true) {
+//     case x>=10000 && x<60000  :
+//     console.log("buy android");
+//     break;
+//     case x>60000 : 
+//     console.log("buy iphone");
+//     break;
+//     case x<10000 && x>=5000 :
+//     console.log("buy basic phone");
+//     break;
+//     case x<5000 :
+//     console.log("not affordable");
+// }
+
+//27th Loops
+// // for(initialexpression ; condition ; step) {
+// //     console.log()
+// // }
+
+// for( i=0; i<7 ; i++) {
+//     console.log("hello",i);
+// }
+
+//28th
+// for ( let i=0 ; i<=5; i++ ) {
+//     if (i % 2 != 0) {
+//         console.log("number " + i);
+//     }
+// }
+
+//29th
+// for ( let i=10 ; i>=0; i-- ) {
+//     if (i % 2 != 0) {
+//         console.log("number " + i);
+//     }
+// }
+
+// 30th forin Loop
+// let person = {
+//     name : 'Abishek',
+//     age : 23,
+//     city : 'chn',
+// }
+// for ( let key in person ) {
+//     console.log(key + ": ", person[key])
+// }
+
+//31 assignment
+// let frdlist = {
+//     frd1 : "arun",
+//     frd2 : "balaji",
+//     frd3 : "bala",
+//     frd4 : "manoj"
+// }
+// for ( let key in frdlist) {
+//     console.log(key + ": " + frdlist[key])
+// }
+
+//32 for in ( in array )
+// let food = [ "street" , "3star", "5star"]
+// for (let key in food) {
+//     console.log(key + ": " +food[key])
+// }
+//33rd for of ( my remembarance of is like equato (=) )
+let food = [ "street" , "3star", "5star"]
+for (let foodi of food) {
+    console.log("food: " +foodi)
+}
+
