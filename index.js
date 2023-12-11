@@ -421,8 +421,75 @@
 //     console.log(key + ": " +food[key])
 // }
 //33rd for of ( my remembarance of is like equato (=) )
-let food = [ "street" , "3star", "5star"]
-for (let foodi of food) {
-    console.log("food: " +foodi)
+// let food = [ "street" , "3star", "5star"]
+// for (let foodi of food) {
+//     console.log("food: " +foodi)
+// }
+
+//34th oops concept
+// let person = {
+//     name : "Arun",
+//     age : 23,
+    
+//     char : ['he is fun loving person'],
+//     address : {
+//         city : "salem",
+//         state : "tamilnadu",
+
+//     },
+// // // console.log(person)
+// // function greeting() {
+// //     let msg = "hey " + name + " come and join the party @jan1"
+// //     console.log(msg)
+// // }
+// // console.log(greeting)
+//     isAlive : true,
+//     greeting: function() {
+//         // let msg = "hey " + this.name + " come and join the party @jan1" + this.char
+//         //  or
+//         let msg = `hey ${this.name}, come and join the party @jan1 ${this.char}`
+//         console.log(msg)
+//     }   
+// };
+// // console.log(person.address)
+// console.log(person.greeting())
+
+//34(a)oops assignment
+// let family = {
+//     plan : 'go to goa',
+//     date : "jan1",
+//     transport : 'flight',
+//     persondetail : {
+//         person1 : 'Abi',
+//         person2 : 'suji',
+//         person3 : 'arav',
+//         person4 : 'karthi'
+//     },
+//     greeting : function() {
+//         let detail = `ready for plan ${this.plan} via ${this.transport} on ${this.date}`
+//         console.log(detail)
+//     }
+
+// }
+// family.greeting();
+// // console.log(family.greeting())
+// // console.log(family)
+
+//35th factory function ( one logic and give more i/p )
+
+function createPerson(name) {
+    return {
+        name,
+        greeting() {
+            let msg = `hey my name is ${this.name}`;
+            console.log(msg)
+        }
+    }
 }
+let name1 = createPerson("abi" );
+let name2 = createPerson("suji");
+name1.greeting()
+name2.greeting()
+
+
 
