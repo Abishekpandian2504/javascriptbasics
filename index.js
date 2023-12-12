@@ -477,19 +477,78 @@
 
 //35th factory function ( one logic and give more i/p )
 
-function createPerson(name) {
-    return {
-        name,
-        greeting() {
-            let msg = `hey my name is ${this.name}`;
-            console.log(msg)
-        }
-    }
+// function createPerson(name) {
+//     return {
+//         name,
+//         greeting() {
+//             let msg = `hey my name is ${this.name}`;
+//             console.log(msg)
+//         }
+//     }
+// }
+// let name1 = createPerson("abi" );
+// let name2 = createPerson("suji");
+// name1.greeting()
+// name2.greeting()
+
+//(a)assignment
+// //let ques = "how r u"
+// function hello(ques) {
+//     let x =  `Hey ${ques}  `
+//     console.log(x)
+// }
+// hello('hekosokd')
+// hello('abishekd')
+
+//(b)
+// function createMsg(ques) {
+//     return {
+//     ques,
+//     greeting() {
+//     let x =  `Hey ${ques}  `
+//     console.log(x)
+//     }
+// }
+// }
+// let ques1 = createMsg('who r u')
+// let ques2 = createMsg('whr r u from')
+// ques1.greeting()
+// ques2.greeting()
+
+//36th factory func
+
+// function addName(name) {
+//     return {
+//     name,
+//     msg() {
+//         console.log(`hello ${name}`)
+//     }
+// }
+// }
+// let name1 = addName('abishek')
+// let name2 = addName('deepak')
+// name1.msg()
+// name2.msg()
+
+//37 constructor fn  // {pascal --> MyFirstName}
+// function Name(name) {
+    
+//     this.name = name;
+//     this.msg = function() {
+//         console.log(`hello ${name}`)
+//     }
+// }
+// let name1 = new Name("abishek")
+// let name2 = new Name("deepak")
+// name1.msg()
+// name2.msg()
+
+//38th dynamic obj
+const person = {
+    name : "abishek",
 }
-let name1 = createPerson("abi" );
-let name2 = createPerson("suji");
-name1.greeting()
-name2.greeting()
+
+console.log(person)
 
 
 
