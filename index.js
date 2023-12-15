@@ -544,11 +544,55 @@
 // name2.msg()
 
 //38th dynamic obj
-const person = {
-    name : "abishek",
-}
+// const person = {
+//     name : "abishek",
+// }
 
-console.log(person)
+// console.log(person)
 
+//39th assignment
 
+// function Newperson(name) {
+//     return {
+//         name,
+//         greeting(Newname) {
+//             let msg = `Welcome ${name}`
+//             console.log(msg)
+//         }
+//     }
+// }
+// // console.log(Newperson)
+// let name1 = Newperson("Abishek");
+// let name2 = Newperson("Abi");
+// name1.greeting()
+// name2.greeting()
+
+//40th constructor property
+
+// let name = new String("jddwd");
+// let age = new Number(34);
+// let isAlive = new Boolean(true);
+
+// console.log(name,age, isAlive)
+
+//41th functions are object
+// function Newperson(name) {
+//     this.name = name;
+//     this.greeting = function() {
+//         console.log(`hello ${name}`)
+//     }
+// }
+
+// let person2 = new Function(
+//     'name',
+//     `this.name = name;
+//     this.greeting = function() {
+//         console.log(hello)
+//     }`
+//     )
+// const person = new Newperson("balaji")
+// person.greeting()
+
+//42nd 
+ 
 
