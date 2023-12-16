@@ -593,6 +593,126 @@
 // const person = new Newperson("balaji")
 // person.greeting()
 
-//42nd 
- 
+//42nd primitive type vs reference type
+//reference type
+// let x = 5;
+// let y = x;
 
+// x=10;
+//console.log(y)
+
+//(a)primitive type we cant change value
+// let mark = 10;
+
+// function value(mark) {
+//     mark++,
+//     console.log(`your mark is ${mark}`)
+// }
+// value(mark)
+
+//(b)use obj reference type value os increased (+1)
+// let marks = {
+//     value : 10,
+//     age : 23
+// }
+
+// function value(mark) {
+//     mark.value++,
+//     console.log(marks)
+// }
+// value(marks)
+
+//43 to know some methods in object
+// const user = {
+//     name : "hello",
+//     age : 23,
+//     isAlive : true,
+// }
+// for (let key in user ) {
+//     console.log(key,":", user[key])
+// }
+
+// for (let key of Object.keys(user) ) {
+//     console.log( key)
+// }
+
+// for (let key of Object.entries(user) ) {
+//     console.log( key)
+// }
+
+//44th enumerating properties ( to find or checkout this one is there or not)
+// const user = {
+//     name : "hey",
+//     greeting() {
+//         console.log(`name is ${name}`);
+//     }
+// }
+
+// if ( 'name' in user) {
+//     console.log("yes")
+// }
+// else {
+//     console.log("no")
+// }
+
+//45th cloning an object
+// const detail = {
+//     name : "Aathira",
+//     greeting() {
+//         console.log(`my best frd name is ${this.name}`)
+//     }
+// }
+// // detail.greeting()
+
+// // let another = Object.assign({
+// //     age : 24
+// //     }, detail) ;
+// // console.log(another)
+
+// let other = {
+//    age:24, 
+//    ...detail
+// }
+// console.log(other)
+
+
+//46th Memory in JS (garbage collection) its all used by js engine (automatic)
+// Js inbuild objects
+
+// console.log(Math.abs(-3))
+// //math operation
+// // Math.round
+// // Math.random
+
+// example code
+// console.log(Math.max(23,24,54,92,73))
+
+//-a
+// let a = [65,86,85,9,96,58];
+// console.log(Math.min(a))
+
+//-b use spread operator
+// let a = [65,86,85,9,96,58];
+// let b = Math.max(...a)
+// console.log(b)
+
+//47th more strings & methods are there  just analysis the above link
+// //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+
+// let msg = "hey what r u doing? "
+// // let result = msg.trim()
+// // let result = msg.split(' ', 6)
+// let result = msg.substr(3)
+// console.log(result)
+
+
+//48th template literals ( ` this is literals)
+// const name = "Arun";
+// const msg =  `hey ${name}
+// how r u `
+// const ans = `
+// i am fine
+// what about u`
+// console.log(name ,msg , ans)
+
+//49th Date()
