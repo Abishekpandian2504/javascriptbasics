@@ -716,3 +716,83 @@
 // console.log(name ,msg , ans)
 
 //49th Date()
+
+// const date = Date()
+
+// const now = new Date()
+
+// const hello = new Date('dec 4 2017')
+// console.log(date)
+// console.log(now.getFullYear())
+// console.log(hello.getDay())
+
+//50th javascript Arrays
+// const name = ["hey", "hello", "hii"];
+// //push use for to add new  in last
+// name.push("jdkm");
+// //unshift use for to add new in front
+// name.unshift("ej")
+// //splice use for to add new in centre
+// name.splice(3,0,"jd",true)
+
+// console.log(name)
+
+
+
+//51 finding element in an array
+//primitive value eg : cupboard
+// const item = ["apple", "orange", "grape", "apple"]
+// //show index in console
+// console.log(item.indexOf("orange"))
+// console.log(item.lastIndexOf("apple"))
+
+// // now finding
+// console.log(item.indexOf("grape") !== -1)
+// //another menthod
+// console.log(item.includes("grape"))
+
+//52
+//reference value eg : route map
+// const orders = [
+//     {id : 2 , name : "abi", age : 21},
+//     {id : 5 , name : "arun", age : 23},
+//     {id : 5 , name : "bala", age : 25}
+// ]
+// let result = orders.findIndex(function(order){
+//     return order.age === 23
+// })
+// console.log(result)
+
+//assignment 
+// let details = [
+//     {name : "hello", age : 32, isAlive: true},
+//     {name : "hel", age : 27, isAlive: true},
+//     {name : "hell", age : 45, isAlive: false},
+// ]
+// let result = details.findIndex(function(detail){
+//     return detail.name === "hel" 
+
+// })
+// console.log(result)
+
+//53 arrow function
+// let details = [
+//     {name : "hello", age : 32, isAlive: true},
+//     {name : "hel", age : 27, isAlive: true},
+//     {name : "hell", age : 45, isAlive: false},
+// ]
+// let result = details.find((detail) => detail.name == "hel" )
+// console.log(result)
+
+
+//54th Removing element in an array
+// const numb = [23, 34, 45, 49];
+// //del end
+// // numb.pop()
+
+// //dele start
+// // numb.shift()
+
+// //dele middle
+// numb.splice(2,1)
+// console.log(numb)
