@@ -796,3 +796,88 @@
 // //dele middle
 // numb.splice(2,1)
 // console.log(numb)
+
+//55th empty a array
+// let num = [32, 543, 42, 35, 53,44];
+
+// //soln:1
+// num = []
+// //soln:2
+// // num.length = 0
+// //soln : 3
+// // num.splice(0,num.length)
+// //soln : 4
+// // while (num.length) num.pop ();
+
+// console.log(num)
+
+//56th
+//combining arrays
+// let name = ["hello","jeds", "ndmakms"]
+// let mark = [32,31,13]
+// //let full = name + mark // but it o/p is not in an array
+// //combine
+// let full = name.concat(mark)
+// //extract to find centre array u use slice
+// let centre = full.slice(2,4)
+// console.log(full)
+// console.log(centre)
+
+//57
+// let name = [
+//     {item :"hello",age : 31},
+//     {item :"heldo"},
+//     {item :"hllo"}
+// ];
+// let mark = [32,31,13]
+
+// let full = name.concat(mark)
+// name[0].item = "Hellad"
+
+// console.log(full)
+
+//58 spread operator
+// let name = ["Abi", "bala", "manoj"];
+// let name2 = ["Arun", "balaji"]
+
+// let list = [...name,...name2]
+// console.log(list);
+
+//59 iterating element in Array
+// let dailyRoutine = ["jejw",23,true];
+// // //for in 
+// // for (let routine in dailyRoutine){
+// //     console.log(dailyRoutine[routine])
+// // }
+// // //for of
+// // for (let routine of dailyRoutine){
+// //     console.log(routine)
+// // }
+// // //for-each
+// // dailyRoutine.forEach(function(routine,routineIndex){
+// //     console.log(routineIndex,routine)
+
+// // })
+// //for-each and use arrow function
+// dailyRoutine.forEach((routine,routineIndex) => console.log(routineIndex,routine))
+
+//60 Joining an Array
+// const name = ["hello", "how", "r u"]
+// let joinName = name.join(" ")
+// console.log(name)
+// console.log(joinName)
+
+//61 split an array
+// let fullName = "Abishek pandian";
+// let name = fullName.split(" ");
+// let firstName = name[0]
+// let secondName = name[1]
+// console.log(name)
+// console.log(firstName)
+
+//62 assignment split and join 
+let hotelName = "pizza Hut";
+let split = hotelName.toLowerCase().split(" ")
+let display = split.join("_")
+console.log(display)
+console.log(split)
