@@ -876,8 +876,220 @@
 // console.log(firstName)
 
 //62 assignment split and join 
-let hotelName = "pizza Hut";
-let split = hotelName.toLowerCase().split(" ")
-let display = split.join("_")
-console.log(display)
-console.log(split)
+// let hotelName = "pizza Hut";
+// let split = hotelName.toLowerCase().split(" ")
+// let display = split.join("_")
+// console.log(display)
+// console.log(split)
+
+//63 sorting an Array
+//(a)
+// let name = ["Sarath", "yuvaraj", "vignesh", "sangeeth"]
+// name.sort()
+// console.log(name)
+
+//(b)
+// let detail = [
+//    {name : "hello", age : 20, isAlive : true} ,
+//    {name : "dhjdah", age : 24, isAlive : true} ,
+//    {name : "dwndjand", age : 11, isAlive : true}, 
+//    {name : "iqqek", age : 43, isAlive : true} ,
+//    {name : "eieo", age : 63, isAlive : true} 
+    
+// ]
+// detail.sort((a,b)=> {
+//      if( a.age < b.age) return -1;
+//      if( a.age > b.age) return 1;
+//     return 0;
+// })
+// console.log(detail)
+
+//63 allow only adult - Primitive type
+// //(a) use every
+// const age = [23, 13 , 34];
+// let result = age.every((value,index,array) => {
+//     return value>=18
+// })
+// //console.log(age)
+// console.log(result)
+
+// //(b)use some
+// const age2 = [23, 13 , 34];
+// let result2 = age2.some((value,index,array) => {
+//     return value>=18
+// })
+// //console.log(age)
+// console.log(result2)
+
+//64 assignment
+// let a = [2,4];
+// let result = a.every((value) => {
+//     return value % 2 == 0
+
+// })
+// console.log(result)
+
+// //some
+// let a = [1,2,3,4,5];
+// let result = a.some((value) => {
+//     return value % 2 == 0
+
+// })
+// console.log(result)
+
+
+//65 testing element in JS array Reference type
+
+// let detail = [
+//     {id : 1, name : "abi", age : 21},
+//     {id : 2, name : "suji", age : 14},
+//     {id : 3, name : "karthi", age : 25},
+// ]
+// let result = detail.every((value)=>{
+//     return value.age >= 18
+
+// })
+// let result2 = detail.some((value)=>{
+//     return value.age >= 18
+
+// })
+// console.log(result)
+// console.log(result2)
+
+//66 filter
+// let detail = [
+//     {id : 1, name : "abi", age : 21},
+//     {id : 2, name : "suji", age : 14},
+//     {id : 3, name : "karthi", age : 25},
+// ]
+// let result = detail.filter((value)=>{
+//     return value.age >= 18
+
+// })
+// let result2 = detail.filter((value)=>{
+//     return value.age < 18
+
+// })
+// console.log( result)
+// console.log(result2)
+
+//67 to check odd or even and display
+// let a = [1,2,3,4,5,6,32,45,21]
+
+// let result = a.filter((value) => {
+//     return value % 2 == 0
+// })
+// let result2 = a.filter((value) => {
+//     return value % 2 != 0
+
+// })
+// console.log("even num : " , result)
+// console.log("odd num : " , result2)
+
+//68 reference type
+// let cart = [
+//     {id : 1 , item : "mobile", price : 15000},
+//     {id : 2 , item : "tv", price : 8000},
+//     {id : 3 , item : "ac", price : 25000},
+//     {id : 4 , item : "dress", price : 2000}
+// ]
+// let result = cart.filter((value)=> 
+//    // return value.price >=1000
+//      value.price >=10000   
+//  )
+// console.log("your price is affordable for" ,result)
+
+//69 finding an array
+// let cart = [
+//     {id : 1 , item : "mobile", price : 7000},
+//     {id : 2 , item : "tv", price : 8000},
+//     {id : 3 , item : "ac", price : 25000},
+//     {id : 4 , item : "dress", price : 15000}
+// ]
+// let result = cart.find((value)=> 
+//    // return value.price >=1000
+//      value.price >=10000   
+//  )
+//  let result2 = cart.findIndex((value)=> 
+//    // return value.price >=1000
+//      value.price >=10000   
+//  )
+// console.log("your price is affordable for" ,result)
+// console.log("index is" ,result2)
+
+//70 mapping 
+//primitive
+// let a  = [1,2,3,4,5];
+// let result = a.map((value,index) => {
+//     return value * 2 
+// })
+// console.log(result)
+
+//71 
+//reference 
+// const person = [
+//     {id : 1 , firstName: "abishek", lastName : "pandian"},
+//     {id : 2 , firstName: "arun", lastName : "pandian"},
+//     {id : 3 , firstName: "bala", lastName : "muruga"}
+// ]
+// const final = person.map((value)=>{
+//     return [value.firstName, value.lastName].join(" ")
+// })
+// console.log(final)
+
+//72
+// const person = [
+//     {id : 1 , firstName: "abishek", lastName : "pandian"},
+//     {id : 2 , firstName: "arun", lastName : "pandian"},
+//     {id : 3 , firstName: "bala", lastName : "muruga"}
+// ]
+// const final = person.map((value)=>{
+//     let fullName = [value.firstName, value.lastName].join(" ");
+//     let obj = { id : value.id, fullName}
+//     return obj;
+// })
+// console.log(final)
+
+// //recall array methods
+// .sort
+// .every
+// .some
+// .filter
+// .map 
+
+// 73 chaining method
+// let products = [
+//     {id : 1, title : "Android phone", price : 7500},
+//     {id : 2, title : "i phone", price : 75000},
+//     {id : 3, title : "head phone", price : 1000}
+// ]
+// //sort by title
+// // let result = products.sort((a,b)=> {
+
+// //     if (a.title < b.title) return -1
+// //     if (a.title > b.title) return 1
+// //     return 0
+// // })
+// //sort by price
+// // let result = products.sort((a,b)=> {
+// //       return a.price - b.price
+// //     // if (a.price < b.price) return -1
+// //     // if (a.price > b.price) return 1
+// //     // return 0
+// // })
+
+// //filter product less than 8000
+// // let result = products.filter((value) => {
+// //     return value.price < 8000
+// // })
+
+// //map it ( price we add $symbol)
+// let result = products.map((value) => {
+//      return  value.id +".  " + value.title + "- ₹" + value.price
+// })
+
+
+// console.log(result)
+
+//74th
+
