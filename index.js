@@ -1091,5 +1091,90 @@
 
 // console.log(result)
 
-//74th
+//74th reduce method (find whole array values like total marks)
+//primitive
+// let marks = [72,98,66,88,74];
+// let total = marks.reduce((value1,value2)=>{
+//     return value1 + value2 
+
+// })
+// console.log(total)
+
+//76
+// reference
+// let person = [
+//     {id : 2, name : "abis", mark: 98},
+//     {id : 1, name : "abi", mark: 92},
+//     {id : 1, name : "abi", mark: 99},
+//     {id : 1, name : "abi", mark: 96},
+//     {id : 1, name : "abi", mark: 93},
+// ]
+// // use reduce
+// // let total = person.reduce((value1,value2) => {
+// //     return value1 + value2.mark 
+// // },0)
+// // console.log(total)
+
+// // //use reduceRight other add from right side 
+// // let total = person.reduceRight((value1,value2) => {
+// //     console.log(value1)
+// //     return value1 + value2.mark 
+// // },0)
+
+// // another
+// // function addCost(value1,value2)  {
+// //     return value1 + value2.mark 
+// // }
+// //new 
+// const addCost = (value1,value2) => value1 + value2.mark
+
+// let total = person.reduce(addCost,0)
+// console.log(total)
+
+//77th assignment 
+// let cart = [
+//     {price: 2300, id: 224, quantity : 2},
+//     {price: 1300, id: 2364, quantity : 1},
+//     {price: 1800, id: 224, quantity : 5},
+//     {price: 500, id: 2324, quantity : 3},
+// ]
+
+// // let total = cart.reduce((value1,value2) => {
+// //     console.log(value1)
+// //     return value1 + value2.id
+// // },0)
+// let subtotal = (value1,value2) =>  value1 + value2.price
+    
+// let total = cart.reduce(subtotal , 0)
+// console.log(total)
+
+//78th
+// //assignment  for sort , find , filter , reduce , map
+// let number = [43,4,3,51,32,87]
+
+
+// //use sort (ascii - American standard code informtion interchange(Ascii table) )
+// // let result = number.sort()
+
+// //use find
+// // let result = number.find((value) => value>50)
+
+// //use filter
+// // let result = number.filter((value) => value>50)
+
+// //use reduce
+// // let result = number.reduce((value1,value2) => {
+// //  //console.log(value1)
+// //   return  value1 + value2
+// // },0)
+
+// //use map
+// let result = number.map((value) => {
+//    // console.log(value1)
+//      return "₹" + value
+//    })
+
+// console.log(result)
+
+
 
