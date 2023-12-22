@@ -84,18 +84,149 @@
 // result("milk")
 
 //8th  Now you've found milk exists add some code to find the index of milk and remove that item. - [🎬 Video] [Solution]
-var items = ["milk", "bread", "sugar"];
+// var items = ["milk", "bread", "sugar"];
 
-// let result = items.indexOf("milk")
-function result(value) {
-    let index = items.indexOf(value)
-    if (index == -1) {
-        console.log("item not exist")
-    }
-    else {
-        items.splice(index,1)
-        console.log("item is there")
-        console.log(items)
-    }
-}
-result("milk")
+// // let result = items.indexOf("milk")
+// function result(value) {
+//     let index = items.indexOf(value)
+//     if (index == -1) {
+//         console.log("item not exist")
+//     }
+//     else {
+//         items.splice(index,1)
+//         console.log("item is there")
+//         console.log(items)
+//     }
+// }
+// result("milk")
+
+//9th List the ways to loop over an array
+// for
+// for in
+// for of
+// for each
+
+//10th Write some code to put these numbers in order (Ascending & Descending) - [🎬 Video] [Solution]
+
+// var numbers = [1, 12, 2, 23, 77, 7, 33, 5, 99, 234];
+
+// let result = numbers.sort((a,b) =>{
+//     if (b >  a) return -1
+// })
+// // let result2 = numbers.sort((a,b) =>{
+// //     if (b < a) return -1
+// // })
+
+// console.log(result)
+// //console.log(result2)
+
+//10th Write some code to place this list in alphabetical order - [🎬 Video] [Solution]
+
+// var p = ["a", "z", "e", "y"];
+
+// let result = p.sort((a,b)=> {
+//     if (a < b) return -1
+// })
+// console.log(result)
+
+//11th What is the length of these arrays - [🎬 Video] [Solution]
+
+// var arr1 = [, , ,];
+
+// var arr2 = new Array(3);
+
+// var arr3 = [1, 2, 3, 4, 5];
+
+// var array = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+// ];
+// console.log(arr2)
+// console.log(array[1].length)
+
+//12th What are the results of these splice and slice methods - [🎬 Video] [Solution]
+
+// var a = ["zero", "one", "two", "three"];
+// var names = ["jason", "john", "peter", "karen"];
+
+// var sliced = a.slice(1,3);
+// var spliced = names.splice(1, 3);
+
+// console.log(sliced)
+// console.log(names)
+
+//13.What are the console logs of these shift and unshift methods - [🎬 Video] [Solution]
+
+// var a = [];
+
+// // We take an empty array and
+
+// a.unshift(1);
+// a.unshift(22);
+// var b = console.log(a);
+// a.shift();
+// var c = console.log(a);
+// a.unshift(3, [4, 5]);
+// var d = console.log(a);
+// a.shift();
+// var e = console.log(a);
+// a.shift();
+// var f = console.log(a);
+// a.shift();
+// var g = console.log(a);
+
+//14th  Using reduce add all these numbers - [🎬 Video] [Solution]
+
+// var numbers = [1, 2, 3, 4, 5, 6];
+
+// let result = numbers.reduce((a,b)=> {
+    
+//     return b - a
+// })
+// console.log(result)
+
+//15th Flatten this array to one single array using reduce - [🎬 Video] [Solution]
+
+// var array = [
+//     [0, 1],
+//     [2, 3],
+//     [4, 5],
+//   ];
+
+//   let result = array.reduce((a,b)=> {
+//      return a.concat(b)
+//   },[])
+//   console.log(result)
+
+//16th Filter this array to return just the dogs - [🎬 Video] [Solution]
+
+// var animals = [
+//     { name: "Jason", species: "rabbit" },
+//     { name: "Jessica", species: "dog" },
+//     { name: "Jacky", species: "owl" },
+//     { name: "Luke", species: "fish" },
+//     { name: "Junior", species: "rat" },
+//     { name: "Thomas", species: "cat" },
+//   ];
+
+//   let result = animals.filter((value)=> {
+//     return value.species == 'dog'
+//   })
+//   console.log(result)
+
+//17. use Map function in this array - [🎬 Video] [Solution]
+
+var animals = [
+    { name: "Jason", species: "rabbit" },
+    { name: "Jessica", species: "dog" },
+    { name: "Jacky", species: "owl" },
+    { name: "Luke", species: "fish" },
+    { name: "Junior", species: "rat" },
+    { name: "Thomas", species: "cat" },
+  ];
+
+  let result = animals.map((value)=> {
+    return  value.name + " is a " +value.species 
+  })
+  console.log(result)
+
