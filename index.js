@@ -1176,5 +1176,84 @@
 
 // console.log(result)
 
+//79th Function 
+// let a = 445;
+// let b = 24253;
 
+// let result = a + b 
 
+// console.log(result)
+
+//2nd
+// function sum(a,b) {
+//     return  a + b; 
+// } 
+
+// let result = sum(2324,314)
+// console.log(result)
+
+//80th 
+// //function declaration
+// function addNew() {
+//     console.log("dffevsadc")
+// }
+// addNew()
+// //function expression
+// let sum = function() {
+//     console.log("aaadffevsadc")
+// }
+// sum()
+
+//81 calculator app
+// let tiffen = 50;
+// let lunch = 80;
+// let petrol =102;
+
+// function sumExpense() {
+//     let result = tiffen + lunch + petrol;
+//     console.log("total : " + result)
+
+// }
+// sumExpense()
+
+//2nd method
+// function sumExpense(tiffen,lunch,petrol) {
+//     return tiffen + lunch + petrol;  
+// }
+// let result = sumExpense(24,532,32)
+// console.log("total : " + result)
+
+//82 function argument
+// function sumExpense() {
+//     let total = 0 
+//     for (let value of arguments) {
+//         total += value
+//     }
+//     return total
+      
+// }
+// let result = sumExpense(2,5,2,1,13,13,1,1)
+// console.log("total : " + result)
+
+//83 assignment add all values
+
+// function addValue() {
+//     let total = 0;
+//     for (let value of arguments) {
+//          total += value
+//         // console.log(total)
+//     }
+//     return total
+
+// }
+// let result = addValue(3,2,3,4,5,6,6)
+// console.log(result)
+
+//84  rest operator
+
+function addNum(loan, ...expense) {
+    let total = expense.reduce((a,b) => a + b )
+    return total -loan
+}
+let result = addNum(3,20,3,4,55,6,6,7,4,2,);
+console.log(result)

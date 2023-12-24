@@ -216,17 +216,34 @@
 
 //17. use Map function in this array - [🎬 Video] [Solution]
 
-var animals = [
-    { name: "Jason", species: "rabbit" },
-    { name: "Jessica", species: "dog" },
-    { name: "Jacky", species: "owl" },
-    { name: "Luke", species: "fish" },
-    { name: "Junior", species: "rat" },
-    { name: "Thomas", species: "cat" },
-  ];
+// var animals = [
+//     { name: "Jason", species: "rabbit" },
+//     { name: "Jessica", species: "dog" },
+//     { name: "Jacky", species: "owl" },
+//     { name: "Luke", species: "fish" },
+//     { name: "Junior", species: "rat" },
+//     { name: "Thomas", species: "cat" },
+//   ];
 
-  let result = animals.map((value)=> {
-    return  value.name + " is a " +value.species 
-  })
-  console.log(result)
+//   let result = animals.map((value)=> {
+//     return  value.name + " is a " +value.species 
+//   })
+//   console.log(result)
+
+
+// add new names
+
+function addName(name) {
+  return {
+  name,
+  greeting() {
+    console.log(`my name is ${name}`)
+  }
+  }
+}
+let name = addName("abishek")
+
+name.greeting()
+
+
 
