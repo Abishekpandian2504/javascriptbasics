@@ -1251,9 +1251,111 @@
 
 //84  rest operator
 
-function addNum(loan, ...expense) {
-    let total = expense.reduce((a,b) => a + b )
-    return total -loan
+// function addNum(loan, ...expense) {
+//     let total = expense.reduce((a,b) => a + b )
+//     return total -loan
+// }
+// let result = addNum(3,20,3,4,55,6,6,7,4,2,);
+// console.log(result)
+
+//85 function laa default parameter
+
+// function totalBill(cost,tax) {
+//     taxAmount = cost * (tax/100)
+//    // console.log(taxAmount)
+//     let totalBill = cost + taxAmount
+//     console.log(`
+//     cost       : ${cost} 
+//     tax amount : ${taxAmount} 
+//     -----------------------------
+//     total      : ${totalBill}`)
+// }
+// totalBill(1000, 12)
+
+//86 normal code 
+// let name = {
+//     firstName : "abishek",
+//     secondName : "pandian",
+//     fullName() { 
+//         return `${name.firstName} ${name.secondName}`
+//     },
+// }
+// console.log(name.fullName())
+
+//86.a ( in es6 we use get and set method now we see)
+
+// let name = {
+//     firstName : "dkmfkmf",
+//     secondName : "rwkrkmf",
+//     get fullName() {
+//         return `${name.firstName} ${name.secondName}`
+//     },
+//     set fullName(value) {
+//         let values = value.split(" ");
+//         this.firstName = values[0];
+//         this.secondName = values[1] ?? "";
+//     }
+// } 
+// name.fullName = "mdkmwtrf"
+
+// console.log(name.fullName)
+
+//86.b use try & catch method and passing error
+// let name = {
+//     firstName : "dkmfkmf",
+//     secondName : "rwkrkmf",
+//     get fullName() {
+//         return `${name.firstName} ${name.secondName}`
+//     },
+//     set fullName(value) {
+//         if(typeof value != "string") {
+//             const err = new Error("i/p not a string");
+//             throw err
+//           //  console.log(err)
+//         }
+//         if(value.length <= 3 ) throw "name invalid"
+//         let values = value.split(" ");
+//         this.firstName = values[0];
+//         this.secondName = values[1] ?? "";
+//     }
+// } 
+
+// try {
+//     name.fullName = "gf"
+// }
+// catch (e) {
+//     alert(e)
+// }
+// console.log(name.fullName)
+
+
+
+//87 assignnment
+
+let products = {
+    product1 : "Tv",
+    product2 : "shampoo",
+    get total() {
+        return `${this.product1} ${this.product2}`
+    },
+    set total(value) {
+        if(typeof value != "string") {
+            const err = new Error("not a string")
+            throw err
+            //console.log(err)
+        }
+        if(value.length <=3) throw ("name invaild")
+       let values = value.split(",")
+       this.product1 = values[0];
+       this.product2 = values[1] ?? "mattum thaan";
+    }
 }
-let result = addNum(3,20,3,4,55,6,6,7,4,2,);
-console.log(result)
+// products.total = "lays,pepsi"
+ try {
+    products.total = "lays"
+ }
+ catch(ess){
+    alert(ess)
+ }
+console.log(products.total)
+

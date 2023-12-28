@@ -233,17 +233,18 @@
 
 // add new names
 
-function addName(name) {
-  return {
-  name,
-  greeting() {
-    console.log(`my name is ${name}`)
-  }
-  }
-}
-let name = addName("abishek")
+// function addName(name) {
+//   return {
+//   name,
+//   greeting() {
+//     console.log(`my name is ${name}`)
+//   }
+//   }
+// }
+// let name = addName("abishek")
 
-name.greeting()
+// name.greeting()
+
 
 
 
