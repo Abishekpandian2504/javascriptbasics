@@ -1332,30 +1332,93 @@
 
 //87 assignnment
 
-let products = {
-    product1 : "Tv",
-    product2 : "shampoo",
-    get total() {
-        return `${this.product1} ${this.product2}`
-    },
-    set total(value) {
-        if(typeof value != "string") {
-            const err = new Error("not a string")
-            throw err
-            //console.log(err)
-        }
-        if(value.length <=3) throw ("name invaild")
-       let values = value.split(",")
-       this.product1 = values[0];
-       this.product2 = values[1] ?? "mattum thaan";
-    }
-}
-// products.total = "lays,pepsi"
- try {
-    products.total = "lays"
- }
- catch(ess){
-    alert(ess)
- }
-console.log(products.total)
+// let products = {
+//     product1 : "Tv",
+//     product2 : "shampoo",
+//     get total() {
+//         return `${this.product1} ${this.product2}`
+//     },
+//     set total(value) {
+//         if(typeof value != "string") {
+//             const err = new Error("not a string")
+//             throw err
+//             //console.log(err)
+//         }
+//         if(value.length <=3) throw ("name invaild")
+//        let values = value.split(",")
+//        this.product1 = values[0];
+//        this.product2 = values[1] ?? "mattum thaan";
+//     }
+// }
+// // products.total = "lays,pepsi"
+//  try {
+//     products.total = "lays"
+//  }
+//  catch(ess){
+//     alert(ess)
+//  }
+// console.log(products.total)
 
+//88.assignment 2 
+// let movieList = {
+//     movie1 : "singam",
+//     movie2 : "varisu",
+//     movie3 : "ayalaan",
+//     get total()  { return `${this.movie1} ${this.movie2} ${this.movie3}`},
+//     set total(value)  {
+//         if(typeof value != "string")  {
+//             const err = new Error("not a string")
+//             throw err
+//            // console.log(err)
+//         }
+//         if(value.length < 3 ) throw "name invalid"
+//         let values = value.split(",") 
+//         this.movie1 = values[0],
+//         this.movie2 = values[1] ?? ""
+//         this.movie3 = values[2] ?? ""
+//     }
+// }
+
+
+// try {
+// movieList.total = "k,g,f"
+// }
+// catch(ss) {
+//    alert(ss)
+// }
+
+
+// console.log(movieList.total)
+
+
+//89.assign 3
+// let name = {
+//     firstName : "kfrs",
+//     secondName: "fsd",
+//     get fullName() {return `${this.firstName} ${this.secondName}`},
+//     set fullName(value) {
+//         if(typeof value != "string") {
+//             const err = new Error("name invalid")
+//             throw err
+//         }
+//         if(value.length < 3)  throw "less char"
+//         let values = value.split(" ")
+//         this.firstName = values[0];
+//         this.secondName = values[1] ?? ""
+//     }
+// }
+// try {
+//     name.fullName = "hgf"
+// }
+// catch(ess) {
+//     alert(ess)
+// }
+// console.log(name.fullName)
+
+//90. Var vs Let ( var : result collected by whole window, Let : only inside our object )
+// var color = "red";
+// let colors = "blue"
+// //check in the terminalor console window.color
+
+
+//91.
