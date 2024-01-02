@@ -1421,4 +1421,21 @@
 // //check in the terminalor console window.color
 
 
-//91.
+//91. recall forEach , for( let key of/in var name)
+// let a = ["ewr","rrw", "fdfsf"];
+
+// let b = a.forEach((value,index)=>{
+//     console.log(value,index)
+// })
+
+
+//92. call,apply,bind
+
+function name() {
+    console.log(this)
+}
+name.call({name : "abishek"})
+name.apply({name :"hello" ,age : 24})
+let newname = name.bind({name : "Balaji"})
+console.log(newname())
+// name()
